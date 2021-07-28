@@ -49,7 +49,7 @@ export default function Map() {
       <div className="container">
         <div className="map__card">
           <h3 className="map__card__heading">Aquí estoy</h3>
-          <PText>dgvdggtgetgdt</PText>
+          <PText>Guanajuato, México.</PText>
           <a
             className="map__card__link"
             href="https://goo.gl/maps/7yWrWVQ1GRFBKYfY6"

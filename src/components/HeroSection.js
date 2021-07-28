@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import HeroImg from '../assets/images/hero.png';
+import GithubImg from '../assets/images/github.svg';
+import LinkedinImg from '../assets/images/linkedin.svg';
+import InstagramImg from '../assets/images/instagram.svg';
 import Button from './Button';
-import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
-import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
+    margin-top: 2rem;
     height: 100vh;
     min-height: 1000px;
     width: 100%;
@@ -41,58 +43,18 @@ const HeroStyles = styled.div`
   .hero__info {
     margin-top: -18rem;
   }
-  .hero__social,
-  .hero__scrollDown {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    position: absolute;
-
-    bottom: 20px;
-    width: 50px;
-  }
   .hero__social {
-    left: 50px;
-  }
-  .hero__scrollDown {
-    right: 50px;
-  }
-
-  .hero__social__indicator,
-  .hero__scrollDown {
-    width: 50px;
-    p {
-      font-size: 1.6rem;
-      transform: translateY(-70px) rotate(90deg);
-      letter-spacing: 0.7rem;
-      text-transform: uppercase;
-    }
-    img {
-      max-height: 45px;
-      width: 16px;
-      margin: 0 auto;
-      object-fit: contain;
+    margin-top: 17rem;
+    text-align: center;
+    a {
+      margin: 2rem;
     }
   }
-  .hero__scrollDown {
-    img {
-      max-height: 70px;
-    }
-  }
-
-  .hero__social__text {
-    ul {
-      li {
-        margin-bottom: 1rem;
-        a {
-          display: inline-block;
-          font-size: 1.6rem;
-          transform: rotate(-90deg);
-          letter-spacing: 5px;
-          margin-bottom: 2rem;
-        }
-      }
-    }
+  .hero__social__icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 13rem;
+    display: inline-block;
   }
 
   @media only screen and (max-width: 768px) {
@@ -113,35 +75,9 @@ const HeroStyles = styled.div`
       margin-top: 3rem;
     }
     .hero__social {
-      left: 0px;
-      bottom: -15%;
-      width: 10px;
-      .hero__social__indicator {
-        width: 20px;
-        p {
-          font-size: 1.2rem;
-        }
-        img {
-          max-height: 22px;
-        }
-      }
-      .hero__social__text {
-        ul {
-          li {
-            a {
-              font-size: 1.2rem;
-              margin-bottom: 1rem;
-            }
-          }
-        }
-      }
-    }
-    .hero__scrollDown {
-      right: 0;
-      width: 20px;
-      gap: 1rem;
-      p {
-        font-size: 1.3rem;
+      margin-top: 8.8rem;
+      a {
+        margin: 0.2rem;
       }
     }
   }
@@ -164,45 +100,36 @@ export default function HeroSection() {
             <Button btnText="Mira mi trabajo" btnLink="/projects" />
           </div>
           <div className="hero__social">
-            <div className="hero__social__indicator">
-              <p>Sigueme</p>
-              <img src={SocialMediaArrow} alt="icon" />
-            </div>
-            <div className="hero__social__text">
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/jesusGZ"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://isntagram.com/web_cifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Linkedin
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="hero__scrollDown">
-            <p>Scroll</p>
-            <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
+            <a
+              href="https://github.com/jesusGZ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                href="https://github.com/jesusGZ"
+                className="hero__social__icon"
+                src={GithubImg}
+                alt="Github"
+              />
+            </a>
+            <a href="http://isntagram.com" target="_blank" rel="noreferrer">
+              <img
+                className="hero__social__icon"
+                src={InstagramImg}
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="hero__social__icon"
+                src={LinkedinImg}
+                alt="Linkedin"
+              />
+            </a>
           </div>
         </div>
       </div>
