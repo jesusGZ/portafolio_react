@@ -103,19 +103,17 @@ export default function About() {
           </div>
           <div className="about__info__items">
             <div className="about__info__item">
-              <h1 className="about__info__heading">Educación</h1>
+              <h1 className="about__info__heading">Expreriencia</h1>
 
               <AboutInfoItem
-                title="eff"
-                items={['Nasirabad Govt. High School, Chattogram']}
+                title="Dev. Back-end:"
+                items={[
+                  'Morpheus DSS - Salvatierra GTO. \n Dic. 2019 - Actualidad',
+                ]}
               />
               <AboutInfoItem
-                title="Collage"
-                items={['BAF Shaheen College Chattogram']}
-              />
-              <AboutInfoItem
-                title="Varsity"
-                items={['University Of Chitiagong']}
+                title="Dev. web"
+                items={['Autonomo - Moroleón GTO.']}
               />
             </div>
             <div className="about__info__item">
@@ -138,13 +136,17 @@ export default function About() {
               />
             </div>
             <div className="about__info__item">
-              <h1 className="about__info__heading">Expreriencia</h1>
-
-              <AboutInfoItem title="2010-2012" items={['xxxxxxxx']} />
+              <h1 className="about__info__heading">Educación</h1>
               <AboutInfoItem
-                title="Dic 2019 - Actualidad"
+                title="Superior:"
                 items={[
-                  'Desarrollador de back-end - Morpheus DSS - Salvatierra GTO.',
+                  'Instituto Tecnologico Superior del Sur de Guanajuato, Uriangato, GTO. (2014-2019).',
+                ]}
+              />
+              <AboutInfoItem
+                title="Medio Superior:"
+                items={[
+                  'Colegio de Educación Profesional Tecnica 128, Moroleón. (2011-2014).',
                 ]}
               />
             </div>

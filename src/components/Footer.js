@@ -14,8 +14,7 @@ const FooterStyle = styled.div`
     flex: 2;
   }
   .footer__col2,
-  .footer__col3,
-  .footer__col4 {
+  .footer__col3 {
     flex: 1;
   }
   .footer__col1__title {
@@ -62,33 +61,6 @@ export default function Footer() {
         </div>
         <div className="footer__col2">
           <FooterCol
-            heading="Links"
-            links={[
-              {
-                title: 'Inicio',
-                path: '/',
-                type: 'Link',
-              },
-              {
-                type: 'Link',
-                title: 'Acerca de mí',
-                path: '/about',
-              },
-              {
-                type: 'Link',
-                title: 'Proyectos',
-                path: '/projects',
-              },
-              {
-                type: 'Link',
-                title: 'Contacto',
-                path: '/contact',
-              },
-            ]}
-          />
-        </div>
-        <div className="footer__col3">
-          <FooterCol
             heading="Información de contacto"
             links={[
               {
@@ -106,7 +78,7 @@ export default function Footer() {
             ]}
           />
         </div>
-        <div className="footer__col4">
+        <div className="footer__col3">
           <FooterCol
             heading="Redes sociales:"
             links={[
@@ -130,7 +102,7 @@ export default function Footer() {
         <div className="container">
           <PText>
             © 2021 | Diseño por{' '}
-            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
+            <a target="_blank" rel="noreferrer">
               web cifar
             </a>{' '}
           </PText>

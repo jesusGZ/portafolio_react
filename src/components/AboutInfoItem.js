@@ -8,9 +8,9 @@ const AboutItemStyles = styled.div`
   justify-content: flex-start;
   position: relative;
   /* gap: 5rem; */
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   .title {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .items {
     display: flex;
@@ -32,7 +32,7 @@ const AboutItemStyles = styled.div`
       gap: 1rem;
     }
     .title {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 `;
